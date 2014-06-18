@@ -26,7 +26,7 @@
 
 
 <div class="wrapper">
-<div id="filters">
+
 
     <select class="select-group filter-select" data-filter-group="departures">
         <option value="*">All Departures</option>
@@ -44,67 +44,79 @@
         <option value=".dest-dutch">Dutchland</option>
         <option value=".dest-no">Nowhere</option>        
     </select> 
-		
 
-<select class="select-group" data-filter-group="sorting"> 
-	<option>Price</option>
-	<option>Star Rating</option>
-	<option>Resort Name</option>
+
+<select id="sorts" class="button-group">
+			<option>Choose a method to sort by</option>
+      <option value="price" />PRICE</option>
+      <option value="rating" />RATING</option>
 </select>
 
-</div>
+<select>
+	<option>Departure Date</option>
+	<option>Within the next 2 Weeks</option>
+	<option> Within the next 2 to 6 weeks</option>
+	<option>More than 6 weeks from now</option>
+	<select>
+
+<select>
+	<option>Trip Duration</option>
+	<option>3-4 Days</option>
+	<option> 5-10 days</option>
+	<option>11+ Days</option>
+	<select>
 
 <div id="container">
     <div class="item dest-ny depart-yeg">
 			<p>Leaving Edmonton</p>
 			<p>Going to NY</p>
-			<p>5 Stars</p>
-			<p>$100</p>
+			<p><span class="rating">5</span> Stars</p>
+			<p>$<span class="price">100</span></p>
 		</div>
     <div class="item dest-no depart-yyc">
 			<p>Leaving Calgary</p>
 			<p>Going to Nowhere</p>
-			<p>2 Stars</p>
-			<p>$120</p>
+			<p><span class="rating">2</span> Stars</p>
+			<p>$<span class="price">120</span></p>
 		</div>
 		
     <div class="item dest-dutch depart-yeg">
 			<p>Leaving Edmonton</p>
 			<p>Going to Dutchland</p>
-			<p>4 Stars</p>
-			<p>$110</p>
+			<p><span class="rating">4</span> Stars</p>
+			<p>$<span class="price">310</span></p>
 		</div>
     <div class="item dest-yeg depart-yyc">
 			<p>Leaving Calgary</p>
 			<p>Going to Edmonton</p>
-			<p>1 Stars</p>
-			<p>$1000</p>
+			<p><span class="rating">1</span> Stars</p>
+			<p>$<span class="price">1000</span></p>
 		</div>
 			
     <div class="item dest-no depart-yyc">
 			<p>Leaving Calgary</p>
 			<p>Going to Nowhere</p>
-			<p>1 Stars</p>
-			<p>$180</p>
+			<p><span class="rating">1</span> Stars</p>
+			<p>$<span class="price">180</span></p>
 		</div>
     <div class="item dest-dutch depart-yyc">
 			<p>Leaving Calgary</p>
 			<p>Going to Dutchland</p>
-			<p>2 Stars</p>
-			<p>$130</p>
+			<p><span class="rating">2</span> Stars</p>
+			<p>$<span class="price">130</span></p>
 		</div>
 		
     <div class="item dest-dutch depart-yeg">
 			<p>Leaving Edmonton</p>
 			<p>Going to Dutchland</p>
-			<p>4 Stars</p>
-			<p>$110</p>
+			<p><span class="rating">4</span> Stars</p>
+			<p>$<span class="price">110</span></p>
 		</div>
     <div class="item dest-yeg depart-yyc">
 			<p>Leaving Calgary</p>
 			<p>Going to Edmonton</p>
-			<p>1 Stars</p>
-			<p>$1000</p>
+			<p><span class="rating">1</span> Stars</p>
+			<p>$<span class="price">1500</span></p>
 		</div>
 		
 		

@@ -1,16 +1,15 @@
 $(function() {
 
-
 	var filters = []; //array to hold the selections
     var $container = $('#container'); //this holds the items in the DOM
 
 	$('.filter-select').change(function(){
-		var $this = $(this);
-		var user_choice = $this.val();
+		var $this = $(this); //checks which select we're using
+		var user_choice = $this.val(); //gets the value the user chose
 		
-		filters.push(user_choice);
+		filters.push(user_choice); //adds each choice into the array
 		
-		var filterValue = filters.join('');
+		var filterValue = filters.join(''); //strips out all the commas to make an isotope friendly class
 		
 		console.log(filterValue);
 		   // set filter for Isotope
@@ -21,6 +20,28 @@ $(function() {
 		
 	});
 	
+
+	
+    var $container = $('#container').isotope({
+       itemSelector: '.item',
+       layoutMode: 'fitRows',
+       getSortData: {
+         price: '.price parseInt',
+       	 rating: '.rating parseInt',
+	   }
+     });
+	
+	
+	
+	
+    // bind sort button click
+     $('#sorts').change(function() {
+
+		 
+       var sortValue = $(this).val();
+	   //alert(sortValue);
+       $container.isotope({ sortBy: sortValue });
+     });
 
 	
 
