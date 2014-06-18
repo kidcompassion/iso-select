@@ -10,9 +10,11 @@ $(function() {
 		
 		filters.push(user_choice);
 		
-		console.log(filters);
+		var filterValue = filters.join('');
+		
+		console.log(filterValue);
 		   // set filter for Isotope
-	//	   $container.isotope({ filter: filterValue });
+	   $container.isotope({ filter: filterValue });
 		
 		
 
